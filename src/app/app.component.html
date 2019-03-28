@@ -3,5 +3,6 @@
   <app-todo-list [todos]="todos" 
   (toggleComplete)="onToggleTodoComplete($event)" 
   (remove)="onRemoveTodo($event)"></app-todo-list>
-  
+  <app-todo-list-footer [todos]='todos'></app-todo-list-footer>
+  <button class="btn btn-primary">Test Button</button>
 </section>

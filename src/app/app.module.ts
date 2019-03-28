@@ -10,6 +10,7 @@ import { TodoListItemComponent } from './todo-list-item/todo-list-item.component
 import { TodoListFooterComponent } from './todo-list-footer/todo-list-footer.component';
 //Import class so we can register it as dependency injection token
 import { TodoDataService } from './todo-data.service';
+import { ApiService } from './api.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { TodoDataService } from './todo-data.service';
     FormsModule,
     HttpModule
   ],
-  providers: [TodoDataService],
+  providers: [TodoDataService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
